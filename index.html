@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Français - Séance 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Lora", serif;
+      }
+      .slide {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 2rem;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .slide-content {
+        max-width: 1000px;
+        width: 100%;
+      }
+      .correct {
+        border-color: #4ade80;
+        background-color: #f0fdf4;
+      }
+      .incorrect {
+        border-color: #f87171;
+        background-color: #fef2f2;
+      }
+      .draggable {
+        cursor: grab;
+      }
+      .dropzone {
+        border: 2px dashed #ccc;
+        transition: background-color 0.3s;
+      }
+      .drop-hover {
+        background-color: #e0f2f1;
+      }
+      .correct-drop {
+        background-color: #c8e6c9 !important;
+        border-color: #4caf50;
+      }
+      .incorrect-drop {
+        background-color: #ffcdd2 !important;
+        border-color: #f44336;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Slide 1: Bienvenida -->
+    <section
+      id="bienvenida"
+      class="slide bg-cover bg-center"
+      style="
+        background-image: url('https://placehold.co/1920x1080/81a4cd/ffffff?text=S%C3%A9ance+2');
+      ">
+      <div
+        class="slide-content bg-white/90 p-8 rounded-xl shadow-lg text-center backdrop-blur-sm">
+        <h1 class="text-5xl font-bold text-blue-900 mb-4">
+          Séance 2: Nombres et Nationalités
+        </h1>
+        <p class="text-xl text-gray-700">
+          Continuamos nuestro viaje en el francés, ¡con un enfoque en Canadá!
+        </p>
+        <a
+          href="#nombres-theorie"
+          class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
+          >Commençons !</a
+        >
+      </div>
+    </section>
+
+    <!-- Slide 2: Les Nombres Théorie -->
+    <section id="nombres-theorie" class="slide bg-gray-100">
+      <div class="slide-content">
+        <h2 class="text-4xl font-bold text-center mb-6">
+          Les Nombres de 0 à 69
+        </h2>
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold mb-4 text-blue-800">
+            Comment compter en français
+          </h3>
+          <div class="space-y-4 text-lg">
+            <p>
+              Contar en francés es sistemático. Una vez que aprendes las bases,
+              puedes construir cualquier número.
+            </p>
+            <ul class="list-disc list-inside space-y-3 pl-4">
+              <li>
+                <strong>De 0 a 16:</strong> Cada número tiene un nombre único
+                que debemos memorizar: <br /><span
+                  class="text-sm text-gray-600 italic"
+                  >zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf,
+                  dix, onze, douze, treize, quatorze, quinze, seize.</span
+                >
+              </li>
+              <li>
+                <strong>De 17 a 19:</strong> Se construyen con la lógica
+                "diez-número": <br /><span class="font-semibold">dix-sept</span>
+                (10-7), <span class="font-semibold">dix-huit</span> (10-8),
+                <span class="font-semibold">dix-neuf</span> (10-9).
+              </li>
+              <li>
+                <strong>Las decenas (20, 30, 40, 50, 60):</strong> Tienen
+                nombres únicos: <br /><span class="font-semibold">vingt</span>
+                (20), <span class="font-semibold">trente</span> (30),
+                <span class="font-semibold">quarante</span> (40),
+                <span class="font-semibold">cinquante</span> (50),
+                <span class="font-semibold">soixante</span> (60).
+              </li>
+              <li>
+                <strong>Para el número 21, 31, 41, 51, 61:</strong> Usamos la
+                decena, la conjunción <span class="font-semibold">"et"</span> y
+                <span class="font-semibold">"un"</span>. Por ejemplo:
+                <br /><span class="font-semibold">vingt et un</span>,
+                <span class="font-semibold">trente et un</span>,
+                <span class="font-semibold">quarante et un</span>.
+              </li>
+              <li>
+                <strong>Para todos los demás números hasta 69:</strong> Usamos
+                la decena y el número (del 2 al 9), unidos por un guion
+                <span class="font-semibold">"-"</span>. Por ejemplo: <br /><span
+                  class="font-semibold"
+                  >vingt-deux</span
+                >, <span class="font-semibold">trente-trois</span>,
+                <span class="font-semibold">quarante-huit</span>,
+                <span class="font-semibold">soixante-neuf</span>.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="#nombres-exercices"
+            class="mt-12 inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors"
+            >Passons aux exercices &darr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: Les Nombres Exercices -->
+    <section id="nombres-exercices" class="slide bg-white">
+      <div class="slide-content">
+        <h2 class="text-4xl font-bold text-center mb-6">
+          Pratique: Les Nombres
+        </h2>
+
+        <!-- Exercice 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-inner mb-6">
+          <h3 class="text-2xl font-bold mb-4">
+            Exercice 1: Écris les nombres en lettres
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="space-y-1">
+              <label>8</label>
+              <input
+                type="text"
+                id="num-ex1-1"
+                onkeyup="checkAnswer(this, 'huit')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>17</label>
+              <input
+                type="text"
+                id="num-ex1-2"
+                onkeyup="checkAnswer(this, 'dix-sept')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>21</label>
+              <input
+                type="text"
+                id="num-ex1-3"
+                onkeyup="checkAnswer(this, 'vingt et un')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>32</label>
+              <input
+                type="text"
+                id="num-ex1-4"
+                onkeyup="checkAnswer(this, 'trente-deux')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>45</label>
+              <input
+                type="text"
+                id="num-ex1-5"
+                onkeyup="checkAnswer(this, 'quarante-cinq')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>59</label>
+              <input
+                type="text"
+                id="num-ex1-6"
+                onkeyup="checkAnswer(this, 'cinquante-neuf')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>60</label>
+              <input
+                type="text"
+                id="num-ex1-7"
+                onkeyup="checkAnswer(this, 'soixante')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>11</label>
+              <input
+                type="text"
+                id="num-ex1-8"
+                onkeyup="checkAnswer(this, 'onze')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>41</label>
+              <input
+                type="text"
+                id="num-ex1-9"
+                onkeyup="checkAnswer(this, 'quarante et un')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>68</label>
+              <input
+                type="text"
+                id="num-ex1-10"
+                onkeyup="checkAnswer(this, 'soixante-huit')"
+                class="border rounded p-2 w-full" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercice 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-inner mb-6">
+          <h3 class="text-2xl font-bold mb-4">
+            Exercice 2: Jeu de Calcul Mental
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+            <div class="space-y-1">
+              <label>dix + neuf =</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'dix-neuf')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>trente + cinq =</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'trente-cinq')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>cinquante - un =</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'quarante-neuf')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>vingt + quatorze =</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'trente-quatre')"
+                class="border rounded p-2 w-full" />
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="#nationalites-theorie"
+            class="mt-8 inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors"
+            >Sujet Suivant &darr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: Les Nationalités Théorie -->
+    <section id="nationalites-theorie" class="slide bg-gray-100">
+      <div class="slide-content">
+        <h2 class="text-4xl font-bold text-center mb-6">
+          Les Nationalités: Accord Masculin-Féminin
+        </h2>
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold mb-4 text-teal-800">
+            Comment former le féminin ?
+          </h3>
+          <p class="mb-6">
+            En francés, las nacionalidades son adjetivos y deben "acordar"
+            (concordar) en género con el sustantivo. Aquí están las reglas
+            principales y cómo afectan la pronunciación.
+          </p>
+
+          <div class="space-y-5">
+            <div>
+              <h4 class="font-semibold text-lg text-teal-900">
+                Règle Générale: Ajouter un "-e"
+              </h4>
+              <p>
+                La forma más común es añadir una "-e" al adjetivo masculino.
+              </p>
+              <p class="font-bold">Pronunciación:</p>
+              <p class="ml-4">
+                Al añadir la "-e", la consonante final del masculino (que a
+                menudo es muda) se pronuncia.
+              </p>
+              <ul class="list-disc list-inside ml-4 text-gray-700">
+                <li>
+                  allemand <span class="text-gray-400">(d muda)</span> &rarr;
+                  allemand<span class="font-bold text-red-500">e</span>
+                  <span class="text-gray-400">(se oye la /d/)</span>
+                </li>
+                <li>
+                  espagnol <span class="text-gray-400">(l suave)</span> &rarr;
+                  espagnol<span class="font-bold text-red-500">e</span>
+                  <span class="text-gray-400">(se oye la /l/ claramente)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-lg text-teal-900">
+                Terminaisons en "-ien" ou "-éen"
+              </h4>
+              <p>Se duplica la "n" y se añade una "-e".</p>
+              <p class="font-bold">Pronunciación:</p>
+              <p class="ml-4">
+                El sonido nasal del masculino desaparece y se convierte en un
+                sonido "en" claro.
+              </p>
+              <ul class="list-disc list-inside ml-4 text-gray-700">
+                <li>
+                  canad<span class="font-bold text-blue-500">ien</span>
+                  <span class="text-gray-400">(sonido nasal)</span> &rarr;
+                  canad<span class="font-bold text-red-500">ienne</span>
+                  <span class="text-gray-400">(sonido /ɛn/)</span>
+                </li>
+                <li>
+                  ital<span class="font-bold text-blue-500">ien</span> &rarr;
+                  ital<span class="font-bold text-red-500">ienne</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-lg text-teal-900">
+                Adjectifs se terminant par "-e"
+              </h4>
+              <p>
+                Los adjetivos que ya terminan en "-e" en masculino, no cambian
+                en femenino.
+              </p>
+              <ul class="list-disc list-inside ml-4 text-gray-700">
+                <li>
+                  suiss<span class="font-bold">e</span> (m.) &rarr; suiss<span
+                    class="font-bold"
+                    >e</span
+                  >
+                  (f.)
+                </li>
+                <li>
+                  belg<span class="font-bold">e</span> (m.) &rarr; belg<span
+                    class="font-bold"
+                    >e</span
+                  >
+                  (f.)
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-lg text-teal-900">
+                Exceptions Notables
+              </h4>
+              <p>Algunas terminaciones tienen una forma irregular.</p>
+              <ul class="list-disc list-inside ml-4 text-gray-700">
+                <li>
+                  gre<span class="font-bold text-blue-500">c</span> &rarr;
+                  gre<span class="font-bold text-red-500">cque</span>
+                </li>
+                <li>
+                  tur<span class="font-bold text-blue-500">c</span> &rarr;
+                  tur<span class="font-bold text-red-500">que</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="#nationalites-exercices"
+            class="mt-12 inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors"
+            >À la pratique ! &darr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: Les Nationalités Exercices -->
+    <section id="nationalites-exercices" class="slide bg-white">
+      <div class="slide-content">
+        <h2 class="text-4xl font-bold text-center mb-6">
+          Pratique: Les Nationalités
+        </h2>
+
+        <div class="bg-gray-50 p-6 rounded-lg shadow-inner mb-6">
+          <h3 class="text-2xl font-bold mb-4">
+            Exercice 1: Complète les phrases
+          </h3>
+          <p class="text-sm mb-4">
+            Escribe la forma correcta del adjetivo entre paréntesis.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-1">
+              <label>1. Mon père est (mexicain).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'mexicain')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>2. Ma mère est (mexicain).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'mexicaine')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>3. Justin Trudeau est (canadien).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'canadien')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>4. Shania Twain est (canadien).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'canadienne')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>5. Mon ami Paul est (français).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'français')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>6. Son amie Marie est (français).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'française')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>7. Le professeur est (américain).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'américain')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>8. La professeure est (américain).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'américaine')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>9. Mon voisin est (suisse).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'suisse')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>10. Ma voisine est (suisse).</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'suisse')"
+                class="border rounded p-2 w-full" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-lg shadow-inner mb-6">
+          <h3 class="text-2xl font-bold mb-4">
+            Exercice 2: Quelle est leur nationalité ?
+          </h3>
+          <p class="text-sm mb-4">
+            Basado en el país, escribe la nacionalidad correcta.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-1">
+              <label>1. Une femme du Japon est...</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'japonaise')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>2. Un homme d'Italie est...</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'italien')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>3. Une femme de Chine est...</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'chinoise')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>4. Un homme de Grèce est...</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'grec')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>5. Une femme de Belgique est...</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'belge')"
+                class="border rounded p-2 w-full" />
+            </div>
+            <div class="space-y-1">
+              <label>6. Un homme du Portugal est...</label>
+              <input
+                type="text"
+                onkeyup="checkAnswer(this, 'portugais')"
+                class="border rounded p-2 w-full" />
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="#devoirs"
+            class="mt-8 inline-block bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors"
+            >Devoirs &darr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 6: Tareas -->
+    <section id="devoirs" class="slide bg-teal-800 text-white">
+      <div class="slide-content text-center">
+        <h2 class="text-4xl font-bold mb-6">Devoirs pour la prochaine fois</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <div class="bg-teal-700 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-2">1. Quizlet</h3>
+            <p>
+              Repasa las 10 palabras nuevas de la lista. La práctica constante
+              es la mejor manera de memorizar.
+            </p>
+          </div>
+          <div class="bg-teal-700 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-2">2. Défi (Desafío)</h3>
+            <p>
+              Mira este video corto de
+              <a
+                href="https://www.youtube.com/watch?v=g3n7J8i8YdM"
+                target="_blank"
+                class="text-yellow-300 underline"
+                >"Un Gars une Fille"</a
+              >
+              (un clásico de Québec) y escribe en un papel 3 números y 2
+              nacionalidades que escuches.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function checkAnswer(inputElement, correctAnswer) {
+        const userAnswer = inputElement.value
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, " ");
+        if (userAnswer === "") {
+          inputElement.classList.remove("correct", "incorrect");
+          return;
+        }
+        if (userAnswer === correctAnswer) {
+          inputElement.classList.add("correct");
+          inputElement.classList.remove("incorrect");
+        } else {
+          inputElement.classList.add("incorrect");
+          inputElement.classList.remove("correct");
+        }
+      }
+
+      // Drag and Drop functionality
+      document.addEventListener("DOMContentLoaded", () => {
+        const draggables = document.querySelectorAll(".draggable");
+        const dropzones = document.querySelectorAll(".dropzone");
+
+        draggables.forEach((draggable) => {
+          draggable.addEventListener("dragstart", (e) => {
+            draggable.classList.add("opacity-50");
+            e.dataTransfer.setData("text/plain", draggable.dataset.value);
+          });
+
+          draggable.addEventListener("dragend", () => {
+            draggable.classList.remove("opacity-50");
+          });
+        });
+
+        dropzones.forEach((zone) => {
+          zone.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            zone.classList.add("drop-hover");
+          });
+
+          zone.addEventListener("dragleave", () => {
+            zone.classList.remove("drop-hover");
+          });
+
+          zone.addEventListener("drop", (e) => {
+            e.preventDefault();
+            zone.classList.remove("drop-hover");
+            const droppedValue = e.dataTransfer.getData("text/plain");
+
+            const originalText =
+              zone.id === "drop-rr"
+                ? "Ryan Reynolds est..."
+                : "Céline Dion est...";
+            zone.innerHTML = `${
+              originalText.split("...")[0]
+            } <span class="font-bold">${droppedValue}</span>`;
+
+            if (zone.dataset.correct === droppedValue) {
+              zone.classList.remove("incorrect-drop");
+              zone.classList.add("correct-drop");
+            } else {
+              zone.classList.remove("correct-drop");
+              zone.classList.add("incorrect-drop");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
