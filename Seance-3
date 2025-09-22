@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratique - Séance 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
+        h1, h2, h3, h4 { font-family: 'Lora', serif; }
+        .exercise-box { background-color: white; border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); margin-bottom: 2rem;}
+        .correct { border-color: #4ade80; background-color: #f0fdf4; }
+        .incorrect { border-color: #f87171; background-color: #fef2f2; }
+        input { transition: all 0.2s ease-in-out; }
+    </style>
+</head>
+<body class="text-gray-800">
+    <header class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+        <h1 class="text-3xl font-bold text-green-900">Séance de Pratique</h1>
+        <a href="seance2_v2.html" class="bg-gray-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors">&larr; Volver a la Clase</a>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6">
+        
+        <!-- Sección Les Loisirs -->
+        <div class="exercise-box" id="loisirs">
+            <h2 class="text-3xl font-bold mb-4">Les Loisirs (Los Pasatiempos)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-3 text-green-800">Frases Clave: Les Articles Définis</h3>
+                    <p class="mb-4">Para hablar de gustos en general, ¡siempre usamos `le, la, l', les`!</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>**J'aime...** (Me gusta...)</li>
+                        <li>**J'adore...** (Me encanta...)</li>
+                        <li>**Je n'aime pas...** (No me gusta...)</li>
+                        <li>**Je déteste...** (Odio...)</li>
+                    </ul>
+                    <p class="mt-4 italic">Exemple: J'aime <span class="font-bold">le</span> sport, mais je déteste <span class="font-bold">la</span> pluie.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-3 text-green-800">Jeu de Vocabulaire</h3>
+                    <p class="mb-4">¿Qué pasatiempos son? Asocia la palabra con su significado.</p>
+                    <ul class="space-y-2">
+                        <li><span class="font-bold">L'art (m.)</span> &rarr; El arte</li>
+                        <li><span class="font-bold">Le cinéma</span> &rarr; El cine</li>
+                        <li><span class="font-bold">Les langues (f.)</span> &rarr; Los idiomas</li>
+                        <li><span class="font-bold">La musique</span> &rarr; La música</li>
+                        <li><span class="font-bold">Le sport</span> &rarr; El deporte</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="mt-8">
+                <h3 class="text-2xl font-bold mb-4">Exercice: Complète les phrases</h3>
+                <p>Usa `le`, `la`, `l'` o `les` para completar las frases sobre tus gustos.</p>
+                <div class="space-y-2 mt-4 text-lg">
+                    <p>1. J'aime <input type="text" onkeyup="checkAnswer(this, 'le')" class="border rounded px-2 w-12 text-center"> café.</p>
+                    <p>2. Tu aimes <input type="text" onkeyup="checkAnswer(this, 'la')" class="border rounded px-2 w-12 text-center"> musique et <input type="text" onkeyup="checkAnswer(this, 'le')" class="border rounded px-2 w-12 text-center"> cinéma ?</p>
+                    <p>3. J'adore <input type="text" onkeyup="checkAnswer(this, 'l\'')" class="border rounded px-2 w-12 text-center"> art.</p>
+                    <p>4. Elle déteste <input type="text" onkeyup="checkAnswer(this, 'les')" class="border rounded px-2 w-12 text-center"> maths.</p>
+                </div>
+             </div>
+        </div>
+
+        <!-- Sección Números 70-100 -->
+        <div class="exercise-box" id="nombres">
+            <h2 class="text-3xl font-bold mb-4">Les Nombres de 70 à 100</h2>
+            <div class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6">
+                <h4 class="text-xl font-bold mb-2">Frases Clave</h4>
+                 <ul class="list-decimal list-inside font-semibold space-y-2">
+                    <li>`70` se basa en 60: `soixante-dix` (60+10), `soixante-onze` (60+11)...</li>
+                    <li>`80` se basa en 20: `quatre-vingts` (4x20), `quatre-vingt-un` (81)...</li>
+                    <li>`90` se basa en 80: `quatre-vingt-dix` (80+10), `quatre-vingt-onze` (91)...</li>
+                    <li>¡Cuidado con los guiones `-` y la ausencia de `et` (excepto en el 1)!</li>
+                </ul>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">Exercice 1: Écris en lettres</h3>
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-4 mb-6">
+                <div class="space-y-1"><label>71</label><input type="text" onkeyup="checkAnswer(this, 'soixante-onze')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>80</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingts')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>99</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingt-dix-neuf')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>76</label><input type="text" onkeyup="checkAnswer(this, 'soixante-seize')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>83</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingt-trois')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>92</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingt-douze')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>70</label><input type="text" onkeyup="checkAnswer(this, 'soixante-dix')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>81</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingt-un')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>100</label><input type="text" onkeyup="checkAnswer(this, 'cent')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>95</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingt-quinze')" class="border rounded p-2 w-full"></div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">Exercice 2: Écris en chiffres</h3>
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-4 mb-6">
+                <div class="space-y-1"><label>soixante-douze</label><input type="text" onkeyup="checkAnswer(this, '72')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>quatre-vingt-six</label><input type="text" onkeyup="checkAnswer(this, '86')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>quatre-vingt-dix</label><input type="text" onkeyup="checkAnswer(this, '90')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>soixante-dix-sept</label><input type="text" onkeyup="checkAnswer(this, '77')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>quatre-vingts</label><input type="text" onkeyup="checkAnswer(this, '80')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>quatre-vingt-onze</label><input type="text" onkeyup="checkAnswer(this, '91')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>cent</label><input type="text" onkeyup="checkAnswer(this, '100')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>quatre-vingt-un</label><input type="text" onkeyup="checkAnswer(this, '81')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>soixante-quinze</label><input type="text" onkeyup="checkAnswer(this, '75')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>quatre-vingt-dix-huit</label><input type="text" onkeyup="checkAnswer(this, '98')" class="border rounded p-2 w-full"></div>
+            </div>
+
+             <h3 class="text-2xl font-bold mb-4">Exercice 3: Calcul Mental</h3>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="space-y-1"><label>soixante + treize =</label><input type="text" onkeyup="checkAnswer(this, 'soixante-treize')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>quatre-vingts + dix =</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingt-dix')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>cent - un =</label><input type="text" onkeyup="checkAnswer(this, 'quatre-vingt-dix-neuf')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>soixante-dix + huit =</label><input type="text" onkeyup="checkAnswer(this, 'soixante-dix-huit')" class="border rounded p-2 w-full"></div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">Exercice 4: Le bon numéro (Dictée)</h3>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="space-y-1"><label>Écris: soixante-seize</label><input type="text" onkeyup="checkAnswer(this, '76')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>Écris: quatre-vingt-quatre</label><input type="text" onkeyup="checkAnswer(this, '84')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>Écris: quatre-vingt-treize</label><input type="text" onkeyup="checkAnswer(this, '93')" class="border rounded p-2 w-full"></div>
+                <div class="space-y-1"><label>Écris: soixante et onze</label><input type="text" onkeyup="checkAnswer(this, '71')" class="border rounded p-2 w-full text-sm"></div>
+            </div>
+            
+             <h3 class="text-2xl font-bold mb-4">Exercice 5: Jeu Oral - Le Loto Québécois!</h3>
+             <div class="bg-gray-100 p-4 rounded-lg">
+                <p><strong>Comment jouer:</strong></p>
+                <ol class="list-decimal list-inside ml-4">
+                    <li>Ketzy escribe 5 números diferentes entre 70 y 100 en un papel.</li>
+                    <li>Yo, el profesor, empiezo a "cantar" números al azar en francés en ese rango.</li>
+                    <li>Cuando Ketzy escucha uno de sus números, lo tacha y grita: "Je l'ai !" (¡Lo tengo!).</li>
+                    <li>La primera en tachar todos sus números gana y grita: "Loto !".</li>
+                </ol>
+             </div>
+        </div>
+
+        <!-- Tareas -->
+        <div class="exercise-box" id="devoirs">
+            <h2 class="text-3xl font-bold mb-4">Devoirs pour la prochaine séance</h2>
+            <div class="text-gray-700 space-y-4">
+                <p></p>
+                <ul>
+                    <li>Cahier d'activités, page 8</li>
+                    <li>Cahier d'activités, exercices 1-3</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function checkAnswer(inputElement, correctAnswer) {
+            const userAnswer = inputElement.value.toLowerCase().trim().replace(" et ", " et ").replace(/\s+/g, ' ');
+            if (userAnswer === "") {
+                inputElement.classList.remove('correct', 'incorrect');
+                return;
+            }
+            if (userAnswer === correctAnswer) {
+                inputElement.classList.add('correct');
+                inputElement.classList.remove('incorrect');
+            } else {
+                inputElement.classList.add('incorrect');
+                inputElement.classList.remove('correct');
+            }
+        }
+    </script>
+</body>
+</html>
+
